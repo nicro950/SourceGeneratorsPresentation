@@ -65,10 +65,42 @@ section.center p {
 <li>.NET standard 2.0 library</li>
 <li>Generates code by analyzing C# and additional files</li>
 <li>Extends user code by generating partial classes and methods</li>
-<li></li>
+<li>Runs live while you code</li>
+<li>Installed by using a nuget package</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="lead" data-style="section.lead {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-style="section.lead {
+    text-align: center;
+}
+section.center p {
+    text-align: center;
+
+}
+" style="--style:section.lead {
+    text-align: center;
+}
+section.center p {
+    text-align: center;
+
+}
+;">
+<h1>Anatomy of a source generator</h1>
+<pre><code class="language-csharp"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>[<span class="hljs-meta">Generator</span>]
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">HelloSourceGenerator</span> : <span class="hljs-title">ISourceGenerator</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Initialize</span>(<span class="hljs-params">GeneratorInitializationContext context</span>)</span>
+    {
+        <span class="hljs-comment">// Initialize code here</span>
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Execute</span>(<span class="hljs-params">GeneratorExecutionContext context</span>)</span>
+    {
+        <span class="hljs-comment">// Generating extra code here</span>
+    }
+}
+</span></span></foreignObject></svg></code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="lead" data-style="section.lead {
     text-align: center;
 }
 section.center p {
@@ -85,7 +117,7 @@ section.center p {
 ;">
 <h1>DEMO</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="invert lead" data-style="section.lead {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="invert lead" data-style="section.lead {
     text-align: center;
 }
 section.center p {
